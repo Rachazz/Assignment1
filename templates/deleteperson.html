@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Person</title>
+</head>
+<body>
+<form action="{{url_for('deleteperson')}}" method="POST">
+    <p>Search</p><br>
+    Name of whose details are to be deleted:<br>
+    <input type="text" name="n"><br>
+
+
+    <input type="submit" value="Delete">
+</form>
+</body>
+</html>

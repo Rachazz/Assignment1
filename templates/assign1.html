@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+</head>
+<body>
+<center>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>salary</th>
+        <th>Room</th>
+        <th>Telnum</th>
+        <th>Picture</th>
+        <th>Keywords</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in value %}
+            <tr>
+                <td>{{row['Name']}}</td>
+                <td>{{row['Salary']}}</td>
+                <td>{{row['Room']}}</td>
+                <td>{{row['Telnum']}}</td>
+                <td>{{row['Picture']}}</td>
+                <td>{{row['Keywords']}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</center>
+
+</body>
+</html>

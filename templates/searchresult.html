@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SearchResult</title>
+</head>
+<body>
+<table>
+    <thead>
+    {% for row in value %}
+    <tr>
+
+        <th>{{row['Name']}}</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+            <tr>
+
+
+                <td><img src="http://s3.us-south.cloud-object-storage.appdomain.cloud/quiz0-ibm/{{ row['Picture'] }}" height="100px" width="100px"></td>
+
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,4 @@
+applications:
+- name: ibm-python-app2
+  random-route: true
+  memory: 256M

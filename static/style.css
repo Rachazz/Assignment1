@@ -1,0 +1,15 @@
+table{
+    border: 1px solid black;
+	width: 80%;
+	font-size: 14px;
+	}
+
+thead tr{
+background-color: #d3cbcb;
+text-transform: uppercase;
+}
+
+tbody tr{
+	background-color: #f4f4f4;
+	border-bottom: 2px solid #d3cbcb;
+	}
